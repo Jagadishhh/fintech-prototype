@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fintech Financial Freedom</h1>
+    </header>
+    <main>
+        <section id="questionnaire">
+            <h2>Financial Questionnaire</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4ea5AFWxESrnIZeZ9kaQtT9Xx6gx1Vd40BRi4aGJrE2VRZg/viewform?embedded=true" width="640" height="1102" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+        <section id="calculator">
+            <h2>50:30:20 Budget Calculator</h2>
+            <form id="budget-form">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income" name="income" required>
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="results"></div>
+        </section>
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            <div id="recommendation-results"></div>
+        </section>
+        <section id="goals">
+            <h2>Goal Planning</h2>
+            <form id="goal-form">
+                <label for="goal">Goal:</label>
+                <input type="text" id="goal" name="goal" required>
+                <label for="amount">Target Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="timeline">Timeline (months):</label>
+                <input type="number" id="timeline" name="timeline" required>
+                <button type="submit">Plan Goal</button>
+            </form>
+            <div id="goal-results"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
